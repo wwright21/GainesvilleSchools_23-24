@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_f952b7422e02e092789d1ef7bf929c9b {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.fullscreen/1.4.2/Control.FullScreen.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.fullscreen/1.4.2/Control.FullScreen.min.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_f952b7422e02e092789d1ef7bf929c9b" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_f952b7422e02e092789d1ef7bf929c9b = L.map(
+                "map_f952b7422e02e092789d1ef7bf929c9b",
+                {
+                    center: [34.29687296230398, -83.82722211472196],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 13,
+                    zoomControl: false,
+                    preferCanvas: false,
+                    maxBounds: [[34.134187689288495, -83.978435392948], [34.48335544561664, -83.59467349764248]],
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_97c05a10565d08cdb551675aaf752661 = L.tileLayer(
+                "https://api.mapbox.com/styles/v1/mapbox/streets-v11/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1Ijoid3dyaWdodDIxIiwiYSI6ImNsNmNnbW92cjF3YXczY281NXRua25xMHgifQ.1Xa_wr0DUhuoNGP0Cbe5Kg",
+                {"attribution": "Mapbox", "detectRetina": false, "maxNativeZoom": 30, "maxZoom": 30, "minZoom": 13, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_f952b7422e02e092789d1ef7bf929c9b);
+        
+    
+            var tile_layer_c7c12df3c1771d98796cd9760b2218f0 = L.tileLayer(
+                "https://mt1.google.com/vt/lyrs=s\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 30, "maxZoom": 30, "minZoom": 13, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_f952b7422e02e092789d1ef7bf929c9b);
+        
+    
+            var feature_group_fea0de4b2cce0b04d80c471c4d76f4d1 = L.featureGroup(
+                {}
+            ).addTo(map_f952b7422e02e092789d1ef7bf929c9b);
+        
+    
+            var marker_c8722c934a8d40dffd641d427d523f21 = L.marker(
+                [34.303439519747464, -83.8452808576591],
+                {}
+            ).addTo(feature_group_fea0de4b2cce0b04d80c471c4d76f4d1);
+        
+    
+            var icon_e5ccfef2be6f6df385fd32c218679005 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "graduation-cap", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_c8722c934a8d40dffd641d427d523f21.setIcon(icon_e5ccfef2be6f6df385fd32c218679005);
+        
+    
+        var popup_392c7f68692d9ef50746bd3316e78f8d = L.popup({"maxWidth": 460});
+
+        
+            
+                var html_01e7f1cd61046b9a9bfff1ef5d80de62 = $(`<div id="html_01e7f1cd61046b9a9bfff1ef5d80de62" style="width: 100.0%; height: 100.0%;">Centennial Arts Academy</div>`)[0];
+                popup_392c7f68692d9ef50746bd3316e78f8d.setContent(html_01e7f1cd61046b9a9bfff1ef5d80de62);
+            
+        
+
+        marker_c8722c934a8d40dffd641d427d523f21.bindPopup(popup_392c7f68692d9ef50746bd3316e78f8d)
+        ;
+
+        
+    
+    
+            var marker_3fddda2727406ede7c2fc0fd65abe989 = L.marker(
+                [34.32353081469683, -83.82289012405307],
+                {}
+            ).addTo(feature_group_fea0de4b2cce0b04d80c471c4d76f4d1);
+        
+    
+            var icon_a7d816f41a67839598bbdbd1914166c4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "graduation-cap", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_3fddda2727406ede7c2fc0fd65abe989.setIcon(icon_a7d816f41a67839598bbdbd1914166c4);
+        
+    
+        var popup_c0486292f33cb69b174cf7c0cac7e275 = L.popup({"maxWidth": 720});
+
+        
+            
+                var html_eaddb714a96aea0d5eb030db349d1109 = $(`<div id="html_eaddb714a96aea0d5eb030db349d1109" style="width: 100.0%; height: 100.0%;">Enota Multiple Intelligences Academy</div>`)[0];
+                popup_c0486292f33cb69b174cf7c0cac7e275.setContent(html_eaddb714a96aea0d5eb030db349d1109);
+            
+        
+
+        marker_3fddda2727406ede7c2fc0fd65abe989.bindPopup(popup_c0486292f33cb69b174cf7c0cac7e275)
+        ;
+
+        
+    
+    
+            var marker_de5bf3c7826cd657ac41d6cc46a03f02 = L.marker(
+                [34.30024514199778, -83.81358002038921],
+                {}
+            ).addTo(feature_group_fea0de4b2cce0b04d80c471c4d76f4d1);
+        
+    
+            var icon_9d4fb744c445759b4ff4d459ec683ff3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "graduation-cap", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_de5bf3c7826cd657ac41d6cc46a03f02.setIcon(icon_9d4fb744c445759b4ff4d459ec683ff3);
+        
+    
+        var popup_fe821094bf2df83d12e017b21e919261 = L.popup({"maxWidth": 660});
+
+        
+            
+                var html_f38007e4005baccb8b6914012784866a = $(`<div id="html_f38007e4005baccb8b6914012784866a" style="width: 100.0%; height: 100.0%;">Fair Street International Academy</div>`)[0];
+                popup_fe821094bf2df83d12e017b21e919261.setContent(html_f38007e4005baccb8b6914012784866a);
+            
+        
+
+        marker_de5bf3c7826cd657ac41d6cc46a03f02.bindPopup(popup_fe821094bf2df83d12e017b21e919261)
+        ;
+
+        
+    
+    
+            var marker_79ff1db7508bfd6ebda7e06d40cdbf1f = L.marker(
+                [34.288963171997395, -83.86366518438354],
+                {}
+            ).addTo(feature_group_fea0de4b2cce0b04d80c471c4d76f4d1);
+        
+    
+            var icon_be7406b73b970964d718d73f5c1b359a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "graduation-cap", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_79ff1db7508bfd6ebda7e06d40cdbf1f.setIcon(icon_be7406b73b970964d718d73f5c1b359a);
+        
+    
+        var popup_56e832ac914d9e18a7ba42222a999234 = L.popup({"maxWidth": 620});
+
+        
+            
+                var html_6498ea3ab6c1edcc60fa640fcbdef55c = $(`<div id="html_6498ea3ab6c1edcc60fa640fcbdef55c" style="width: 100.0%; height: 100.0%;">Gainesville Exploration Academy</div>`)[0];
+                popup_56e832ac914d9e18a7ba42222a999234.setContent(html_6498ea3ab6c1edcc60fa640fcbdef55c);
+            
+        
+
+        marker_79ff1db7508bfd6ebda7e06d40cdbf1f.bindPopup(popup_56e832ac914d9e18a7ba42222a999234)
+        ;
+
+        
+    
+    
+            var marker_6fcd05c03123a51c641f4cd5b20acdc9 = L.marker(
+                [34.248114714250846, -83.87319396875951],
+                {}
+            ).addTo(feature_group_fea0de4b2cce0b04d80c471c4d76f4d1);
+        
+    
+            var icon_7b7625841ae70c1dd4816bb0c2138394 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "graduation-cap", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_6fcd05c03123a51c641f4cd5b20acdc9.setIcon(icon_7b7625841ae70c1dd4816bb0c2138394);
+        
+    
+        var popup_9e37a0ae70f9ac575e173514087fe160 = L.popup({"maxWidth": 540});
+
+        
+            
+                var html_7d1c1176972f7bcb08a0d56b6de7b6e7 = $(`<div id="html_7d1c1176972f7bcb08a0d56b6de7b6e7" style="width: 100.0%; height: 100.0%;">Mundy Mill Learning Academy</div>`)[0];
+                popup_9e37a0ae70f9ac575e173514087fe160.setContent(html_7d1c1176972f7bcb08a0d56b6de7b6e7);
+            
+        
+
+        marker_6fcd05c03123a51c641f4cd5b20acdc9.bindPopup(popup_9e37a0ae70f9ac575e173514087fe160)
+        ;
+
+        
+    
+    
+            var marker_27e7549342382aaa10159efe91798686 = L.marker(
+                [34.304777241900645, -83.80822772763095],
+                {}
+            ).addTo(feature_group_fea0de4b2cce0b04d80c471c4d76f4d1);
+        
+    
+            var icon_46001135f8cf82905e468efd4b378a19 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "graduation-cap", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_27e7549342382aaa10159efe91798686.setIcon(icon_46001135f8cf82905e468efd4b378a19);
+        
+    
+        var popup_ff4573c947d7abfc7b6577e7f746f6bd = L.popup({"maxWidth": 580});
+
+        
+            
+                var html_1d6825496dce02e1659e6f91a34bd5c1 = $(`<div id="html_1d6825496dce02e1659e6f91a34bd5c1" style="width: 100.0%; height: 100.0%;">New Holland Knowledge Academy</div>`)[0];
+                popup_ff4573c947d7abfc7b6577e7f746f6bd.setContent(html_1d6825496dce02e1659e6f91a34bd5c1);
+            
+        
+
+        marker_27e7549342382aaa10159efe91798686.bindPopup(popup_ff4573c947d7abfc7b6577e7f746f6bd)
+        ;
+
+        
+    
+    
+            var feature_group_64eeb43a2f3bb4ee8b30f715c237bd73 = L.featureGroup(
+                {}
+            ).addTo(map_f952b7422e02e092789d1ef7bf929c9b);
+        
+    
+            var marker_a7d36b50fd496902c3be48a296fa2caf = L.marker(
+                [34.311230237360625, -83.80673528025761],
+                {}
+            ).addTo(feature_group_64eeb43a2f3bb4ee8b30f715c237bd73);
+        
+    
+            var icon_24fff66418f64f39e140ced42a272696 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "graduation-cap", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_a7d36b50fd496902c3be48a296fa2caf.setIcon(icon_24fff66418f64f39e140ced42a272696);
+        
+    
+        var popup_71ff1b297fadb38ca29651fad9a46fe6 = L.popup({"maxWidth": 640});
+
+        
+            
+                var html_baca1dd9bea4dbeb9239b650c13db123 = $(`<div id="html_baca1dd9bea4dbeb9239b650c13db123" style="width: 100.0%; height: 100.0%;">Gainesville Middle (East)</div>`)[0];
+                popup_71ff1b297fadb38ca29651fad9a46fe6.setContent(html_baca1dd9bea4dbeb9239b650c13db123);
+            
+        
+
+        marker_a7d36b50fd496902c3be48a296fa2caf.bindPopup(popup_71ff1b297fadb38ca29651fad9a46fe6)
+        ;
+
+        
+    
+    
+            var marker_2cbc9f9b3053511becd5e68699a071ab = L.marker(
+                [34.280864145041974, -83.867708264793],
+                {}
+            ).addTo(feature_group_64eeb43a2f3bb4ee8b30f715c237bd73);
+        
+    
+            var icon_db6901e91559fe8c7cd0e619fc737f8d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "graduation-cap", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_2cbc9f9b3053511becd5e68699a071ab.setIcon(icon_db6901e91559fe8c7cd0e619fc737f8d);
+        
+    
+        var popup_54b0037569922976090817aab77fe5fd = L.popup({"maxWidth": 640});
+
+        
+            
+                var html_e882a7beac9b142b637ec17c04d42a5e = $(`<div id="html_e882a7beac9b142b637ec17c04d42a5e" style="width: 100.0%; height: 100.0%;">Gainesville Middle (West)</div>`)[0];
+                popup_54b0037569922976090817aab77fe5fd.setContent(html_e882a7beac9b142b637ec17c04d42a5e);
+            
+        
+
+        marker_2cbc9f9b3053511becd5e68699a071ab.bindPopup(popup_54b0037569922976090817aab77fe5fd)
+        ;
+
+        
+    
+    
+            var feature_group_dbebe58d7755712eb1d646138821a368 = L.featureGroup(
+                {}
+            ).addTo(map_f952b7422e02e092789d1ef7bf929c9b);
+        
+    
+            var marker_14e85a5df763e3c31e0fd5c83e1a746b = L.marker(
+                [34.29996848425073, -83.84426178153133],
+                {}
+            ).addTo(feature_group_dbebe58d7755712eb1d646138821a368);
+        
+    
+            var icon_15bc36c34bf26a42c367b6ade9114fd3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "graduation-cap", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_14e85a5df763e3c31e0fd5c83e1a746b.setIcon(icon_15bc36c34bf26a42c367b6ade9114fd3);
+        
+    
+        var popup_151cd26817eebbdbf534945b448f15dd = L.popup({"maxWidth": 460});
+
+        
+            
+                var html_96e769a36771a16438a7c59d6a867206 = $(`<div id="html_96e769a36771a16438a7c59d6a867206" style="width: 100.0%; height: 100.0%;">Gainesville High</div>`)[0];
+                popup_151cd26817eebbdbf534945b448f15dd.setContent(html_96e769a36771a16438a7c59d6a867206);
+            
+        
+
+        marker_14e85a5df763e3c31e0fd5c83e1a746b.bindPopup(popup_151cd26817eebbdbf534945b448f15dd)
+        ;
+
+        
+    
+    
+            var layer_control_acfa1a9d3886500d5093a9af4adfda3f = {
+                base_layers : {
+                    "Streets" : tile_layer_97c05a10565d08cdb551675aaf752661,
+                    "Satellite" : tile_layer_c7c12df3c1771d98796cd9760b2218f0,
+                },
+                overlays :  {
+                    "Elementary Schools" : feature_group_fea0de4b2cce0b04d80c471c4d76f4d1,
+                    "Middle Schools" : feature_group_64eeb43a2f3bb4ee8b30f715c237bd73,
+                    "High School" : feature_group_dbebe58d7755712eb1d646138821a368,
+                },
+            };
+            L.control.layers(
+                layer_control_acfa1a9d3886500d5093a9af4adfda3f.base_layers,
+                layer_control_acfa1a9d3886500d5093a9af4adfda3f.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_f952b7422e02e092789d1ef7bf929c9b);
+            tile_layer_c7c12df3c1771d98796cd9760b2218f0.remove();
+        
+    
+            L.control.fullscreen(
+                {"forceSeparateButton": false, "position": "topleft", "title": "Full Screen", "titleCancel": "Exit Full Screen"}
+            ).addTo(map_f952b7422e02e092789d1ef7bf929c9b);
+        
+</script>
+</html>
