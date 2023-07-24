@@ -1,5 +1,3 @@
-# GainesvilleSchools_23-24
+# City of Gainesville School District Research Map
 
-## Repo comments
-
-This is text.
+## Data current for 2023-2024 school year.
